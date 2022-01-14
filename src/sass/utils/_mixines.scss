@@ -1,0 +1,12 @@
+@mixin font($font-weigh, $font-size, $line-height, $letter-spacing, $color) {
+  font-weight: $font-weigh;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+@mixin flex($display: flex, $align-items: center, $justify-content: flex-start) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
