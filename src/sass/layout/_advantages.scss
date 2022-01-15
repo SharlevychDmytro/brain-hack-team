@@ -27,11 +27,14 @@
 }
 
 .advantages-list {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    margin-left: calc(-1 * #{60px});
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-left: calc(-1 * #{30px});
-    margin-bottom: calc(-1 * #{30px});
   }
 }
 
@@ -39,8 +42,13 @@
   max-width: 230px;
 
   @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    width: calc((100% - 2 * #{60px}) / 3);
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-left: 30px;
-    width: calc((100% - 2 * #{30px}) / 2);
+    width: calc((100% - 2 * #{30px}) / 3);
   }
 
   &:not(:last-child) {
@@ -48,8 +56,6 @@
       margin-bottom: 38px;
     }
   }
-
-  outline: 2px solid teal;
 }
 
 .advantages-image {
@@ -59,6 +65,14 @@
   background-size: contain;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages-image--basket {
@@ -101,7 +115,21 @@
 
   color: $mainTitleColor;
 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+
+    margin-bottom: 15px;
+  }
 }
 
 .advantages-text {
@@ -111,4 +139,17 @@
   line-height: 1.7;
 
   color: $secondTextColor;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
 }
