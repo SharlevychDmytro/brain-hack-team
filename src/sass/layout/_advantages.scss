@@ -1,0 +1,114 @@
+/* team */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+
+  outline: 2px solid tomato;
+}
+
+.advantages {
+  padding-top: 39px;
+  padding-bottom: 94px;
+  background-color: $secondBackgroundColor;
+}
+
+.advantages-list {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: center;
+    margin-left: calc(-1 * #{30px});
+    margin-bottom: calc(-1 * #{30px});
+  }
+}
+
+.advantages-item {
+  max-width: 230px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    width: calc((100% - 2 * #{30px}) / 2);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 38px;
+    }
+  }
+
+  outline: 2px solid teal;
+}
+
+.advantages-image {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  margin-bottom: 16px;
+}
+
+.advantages-image--basket {
+  background-image: url('../images/mobile/advantages-basket-1x.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/advantages-basket-2x.png');
+  }
+}
+
+.advantages-image--apples {
+  background-image: url('../images/mobile/advantages-apples-1x.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/advantages-apples-2x.png');
+  }
+}
+
+.advantages-image--icecream {
+  background-image: url('../images/mobile/advantages-heart-1x.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/advantages-heart-2x.png');
+  }
+}
+
+.advantages-title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $mainTitleColor;
+
+  margin-bottom: 15px;
+}
+
+.advantages-text {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: $secondTextColor;
+}
