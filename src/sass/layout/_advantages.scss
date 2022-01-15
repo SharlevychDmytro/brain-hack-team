@@ -1,29 +1,31 @@
 /* team */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-right: 20px;
+//   padding-left: 20px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-
-  outline: 2px solid tomato;
-}
+//   @media screen and (min-width: 1280px) {
+//     width: 1280px;
+//   }
+// }
 
 .advantages {
   padding-top: 39px;
   padding-bottom: 94px;
   background-color: $secondBackgroundColor;
+}
+
+.advantages-section-title {
+  display: none;
 }
 
 .advantages-list {
@@ -76,32 +78,32 @@
 }
 
 .advantages-image--basket {
-  background-image: url('../images/mobile/advantages-basket-1x.png');
+  background-image: url('../images/mobile/bucket-mob-1x.png');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/advantages-basket-2x.png');
+    background-image: url('../images/mobile/bucket-mob-2x.png');
   }
 }
 
 .advantages-image--apples {
-  background-image: url('../images/mobile/advantages-apples-1x.png');
+  background-image: url('../images/mobile/apples-mob-1x.png');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/advantages-apples-2x.png');
+    background-image: url('../images/mobile/apples-mob-1x.png');
   }
 }
 
 .advantages-image--icecream {
-  background-image: url('../images/mobile/advantages-heart-1x.png');
+  background-image: url('../images/mobile/heart-mob-1x.png');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/advantages-heart-2x.png');
+    background-image: url('../images/mobile/heart-mob-2x.png');
   }
 }
 
