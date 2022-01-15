@@ -1,0 +1,62 @@
+.customer-reviews-section__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.customer-reviews-section__customer-foto {
+  width: 85px;
+  height: 85px;
+  background-image: url(../images/team/Dmytro_Sharlevych_image.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+.customer-reviews-section__customer-block {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 43px;
+  padding-bottom: 10px;
+  @media screen and (max-width: 480px) {
+    background-color: $thirdBackgroundColor;
+  }
+}
+
+.customer-reviews-section__customer-review-gradient {
+  position: absolute;
+  top: 71px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: calc(100% - 70px);
+  //   border: 1px solid red;
+  background: repeating-linear-gradient(
+    to bottom,
+    $firstBorderColor,
+    $firstBorderColor 1px,
+    transparent 1px,
+    transparent 31px
+  );
+  //   background: repeating-linear-gradient(to left, darkblue, darkblue 3px, yellow 3px, yellow 31px);
+  //   background-color: blue;
+}
+
+@media screen and (min-width: 480px) {
+  .customer-reviews-section_container {
+    width: 480px;
+  }
+}
+
+.customer-reviews-section__customer-review {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.59;
+  text-align: center;
+  vertical-align: baseline;
+  padding-left: 7px;
+  padding-right: 16px;
+}
