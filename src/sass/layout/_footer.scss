@@ -1,5 +1,5 @@
 .footer {
-  background-color: #fff5f6;
+  background-color: $secondBackgroundColor;
 }
 .footer__container {
   padding: 113px 20px 43px 20px;
@@ -14,7 +14,7 @@
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $fourthTextColor;
 }
 .footer__title-link {
   width: 200px;
@@ -28,7 +28,7 @@
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $accentColor;
   text-decoration: none;
 }
 
@@ -42,10 +42,10 @@
   margin-right: 28px;
 }
 .social-list__link {
-  color: #ffa5ba;
+  color: $fourthTextColor;
   &:focus,
   &:hover {
-    color: #d41443;
+    color: $accentColor;
   }
 }
 .social-list__icon {
@@ -63,14 +63,14 @@
   line-height: 1.86;
 }
 .footer__contacts-text {
-  color: #000000;
+  color: $secondTextColor;
 }
 .footer__contacts-tel {
-  color: #ffa5ba;
+  color: $fourthTextColor;
   text-decoration: none;
   &:focus,
   &:hover {
-    color: #d41443;
+    color: $sendBtnColor;
   }
 }
 
@@ -85,6 +85,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  color: #907e82;
+  color: $thirdTextColor;
   width: 145px;
 }
