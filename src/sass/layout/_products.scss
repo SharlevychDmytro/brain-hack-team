@@ -6,7 +6,12 @@
        text-align: center;
        text-transform: uppercase;
        margin-bottom: 15px;
-       
+       @media screen and(min-width: 768px) {
+        @include font(400, 26px, 1.15, 0em, $fourthTextColor);
+      }
+      @media screen and(min-width: 1200px) {
+        @include font(400, 30px, 1.16, 0em, $fourthTextColor);
+      } 
     }
     &__title {
         @include font(400, 34px, 1.14, 0.04em, $sendBtnColor);
@@ -14,26 +19,60 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 31px;
+        @media screen and(min-width: 768px) {
+          @include font(400, 48px, 1.14, 0.04em, $sendBtnColor);
+        }
+        @media screen and(min-width: 1200px) {
+          @include font(400, 58px, 1.15, 0.06em, $sendBtnColor);
+        }
     }
+     &__list {
+      @include flex(flex, center, center);
+      @media screen and(max-width: 767px) {
+        flex-wrap: wrap;
+      } 
+    }
+    
     &__item {
-        position: relative;
-        margin-bottom: 17px;
-    }
+      @media screen and(min-width: 767px) {
+        flex-basis: calc(100% / 3 - 20px);
+        // margin-left: 20px; 
+      }
+       @media screen and(min-width: 1200px) {
+          flex-basis: calc(100% / 3 - 23px);
+          // margin-left: 23px;
+        }
+       
+      }
      &__image {
          width: 253px;
         height: 252px;  
-      position: absolute;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-    
-      
+         position: absolute;
+        left: 50%;
+        // margin-right: -50%;
+        transform: translate(-50%, -50%);
+        @media screen and(min-width: 768px) {
+          width: 220px;
+          height: 224px;
+        }
+        @media screen and(min-width: 1200px) {
+          width: 335px;
+          height: 335px;
+         
+        }
     }
     &__container {
      border-radius: 24px;
-    // height: 485px;
-    margin-top: 130px;
-    padding-bottom: 41px;
+     margin-top: 130px;
+     padding-bottom: 41px;
+     @media screen and(min-width: 768px) {
+      margin-top: 150px;
+      padding-bottom: 40px;
+     }
+    @media screen and(min-width: 1200px) {
+      margin-top: 259px;
+      padding-bottom: 50px;
+    }
     
     } 
     &__container-pink {
@@ -52,6 +91,15 @@
       text-align: center;
       padding-top: 161px;
       margin-bottom: 30px;
+      @media screen and(min-width: 768px) {
+        padding-top: 152px;
+      margin-bottom: 30px;
+      }
+      @media screen and(min-width: 1200px) {
+        @include font(400, 30px, 1.16, 0.04em, $secondTitleColor);
+        padding-top: 201px; 
+        margin-bottom: 30px;
+      }
     
       &::after {
         content: "...";
@@ -64,13 +112,38 @@
     &__list-text {
       @include font(700, 14px, 1.5, 0.04em, $mainTextColor);
       text-align: center;
-      width: 200px;
-      height: 124px;
+      padding-right: 41px;
+      padding-left: 39px;
       margin: 0 auto;
+      @media screen and(min-width: 768px) {
+        padding-right: 11px;
+        padding-left: 11px; 
+      }
+      @media screen and(min-width: 1200px) {
+        @include font(700, 16px, 1.8, 0.04em, $mainTextColor);
+      padding-right: 44px;
+      padding-left: 45px;
+      }
     }
-}
-
+  }
+    .thumb {
+      position: relative;
+      width: 280px;
+      @media screen and(min-width: 768px) {
+        width: 220px;
+        
+      }
+      @media screen and(min-width: 1200px) {
+        width: 335px; 
+      }
+    }
   .products-button {
     @include flex(flex, center, center);
     margin-top: 30px;
+    @media screen and(min-width: 768px) {
+      margin-top: 40px;
+    }
+    @media screen and(min-width: 1200px) {
+      margin-top: 62px; 
+    }
   }
