@@ -1,0 +1,76 @@
+.products {
+    padding-top: 127px;
+    &__pretitle {
+      @include font(400, 18px, 1.16, 0em, $fourthTextColor);
+       font-family: Titan One;
+       text-align: center;
+       text-transform: uppercase;
+       margin-bottom: 15px;
+       
+    }
+    &__title {
+        @include font(400, 34px, 1.14, 0.04em, $sendBtnColor);
+        font-family: Titan One;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 31px;
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 17px;
+    }
+     &__image {
+         width: 253px;
+        height: 252px;  
+      position: absolute;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    
+      
+    }
+    &__container {
+     border-radius: 24px;
+    // height: 485px;
+    margin-top: 130px;
+    padding-bottom: 41px;
+    
+    } 
+    &__container-pink {
+    background-color: #FFB8CA;
+    }  
+    &__container-yellow {
+    background-color: #F0D1A5;   
+    }
+    &__container-chocolate {
+     background-color: #C2E297;   
+    }
+    &__list-title {
+      @include font(400, 20px, 1.15, 0.04em, $secondTitleColor);
+      font-family: Titan One;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 161px;
+      margin-bottom: 30px;
+    
+      &::after {
+        content: "...";
+        display: block;
+        letter-spacing: 0.2em;
+        font-size: 30px;
+      }
+    }
+    
+    &__list-text {
+      @include font(700, 14px, 1.5, 0.04em, $mainTextColor);
+      text-align: center;
+      width: 200px;
+      height: 124px;
+      margin: 0 auto;
+    }
+}
+
+  .products-button {
+    @include flex(flex, center, center);
+    margin-top: 30px;
+  }
