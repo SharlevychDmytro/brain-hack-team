@@ -16,7 +16,7 @@
 .customer-reviews-section__customer-foto-block {
   width: 85px;
   height: 85px;
-  overflow: hidden;
+  overflow-x: hidden;
   background-size: cover;
   border-radius: 50%;
   margin: 0 auto;
@@ -107,7 +107,7 @@
 }
 .customer-reviews-section__customer-data-block {
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 42px;
 }
 
 .customer-reviews-section__customer-data-text {
@@ -127,4 +127,28 @@
 .customer-reviews-section .swiper-slide.swiper-slide-prev {
   margin-right: 20px;
   margin-left: -20px;
+}
+
+.customer-reviews-section .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  // display: inline;
+  width: 12.4px;
+  height: 11.5px;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url(../images/svg-sprite/single-svg/home-customer-reviews.svg);
+  background-size: contain;
+  background-position: center;
+}
+
+.customer-reviews-section .swiper-pagination-bullet {
+  // display: inline;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0px);
 }
