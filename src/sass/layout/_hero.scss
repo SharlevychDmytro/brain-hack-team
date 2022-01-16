@@ -1,22 +1,38 @@
-// .header{
-// height: 87px;
-// background-color: #ffb8ca88;
-// }
-
 .hero{
   background-color: $headerBackgroundColor;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .hero .container{
   position: relative;
   height: 502px;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  padding-top: 94px;
+  padding-right: 34px;
+  padding-left: 154px;
+  padding-bottom: 34px;
+
+  @media screen and (min-width:768px) {
+    width: 768px;
+    height: 399px;
+  }
 }
 
 .hero__wrapper{
   position: absolute;
   top:195px;
   left: 20px;
+
+  @media screen and (min-width:768px) {
+    top:102px;
+    left: 34px;
+  }
 }
 
 .hero__decoraition{
@@ -30,6 +46,14 @@
   height: 344px;
 
   background-color: $fourthTextColor;
+
+  @media screen and(min-width:768px) {
+    bottom: 46px;
+    left: 307px;
+
+    width: 324px;
+    height: 322px;  
+  }
 }
 
 .hero__image{
@@ -39,24 +63,29 @@
     display: none;
 
     @media screen and (min-width:768px) {
+      bottom: 28px;
+      left: 34px;
       display: block;
     }
   }
 
   &--central{
     bottom: 0;
-    right: 32px;
+    left: 117px;
     
-    // @media screen and(min-width:480px) {
-    //   right: 100px;
-    // }
+    @media screen and(min-width:768px) {
+      left: 378px;
+      width: 143px;
+    }
   }
 
   &--left{
     display: none;
 
     @media screen and (min-width:768px) {
-      display: block;
+      right: 34px;
+      bottom: 0;
+      display: block;      
     }
   }
 }
@@ -64,9 +93,7 @@
 .hero__title{
   margin-bottom: 19px;
 
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Titan One", sans-serif;
   font-size: 26px;
   line-height: 1.145;
   letter-spacing: 0.04em;
@@ -79,6 +106,16 @@
     line-height: 0.965;
 
     color: $mainTitleColor;
+
+    @media screen and (min-width:768px) {
+      font-size: 34px;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 20px;
+
+    font-size: 22px;
   }
 }
 
@@ -145,16 +182,53 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  align-self: end;
 }
 
-.hero__item::after{
-  content: " ";
+.hero__item{
+  display: flex;
+  justify-content: end;
+
+  font-family: "Titan One", sans-serif;
+  font-size: 28px;
+  line-height: 1.143;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $mainBtnTextColor;
+
+  &:not(:last-child){
+    margin-bottom: 13px;
+  }
+}
+
+.hero__count{
+  position: relative;
+  top: 1px;
+  right: -6px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.hero__after{
   box-sizing: border-box;
   display: inline-block;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
   background-color: $mainBackgroundColor;
+}
+
+.hero__desc{
+  font-family: "DM Sans", sans-serif;
+  font-size: 8px;
+  line-height: 1.250;
+  letter-spacing: normal;
+  text-transform: lowercase;
+
+  color: $mainTextColor;
 }
 
 .hero__text,
@@ -162,4 +236,17 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+}
+
+.hero-box{
+  width: 114px;
+}
+
+.hero__text{
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  line-height: 1.500;
+
+  color: $mainTextColor;
 }
