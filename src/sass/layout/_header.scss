@@ -42,15 +42,15 @@
             display: flex;
             align-items: center;
             
-            @media screen and (min-width: 320px) and (max-width: 479px) {
-              display: none;
-            }
-            @media screen and (min-width: 480px) and (max-width: 767px) {
-              display: none;
-            }
-            @media screen and (min-width: 768px) and (max-width: 1200px) {
-              display: none;
-            }
+                @media screen and (min-width: 320px) and (max-width: 479px) {
+                  display: none;
+                }
+                @media screen and (min-width: 480px) and (max-width: 767px) {
+                  display: none;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1200px) {
+                  display: none;
+                }
           }
 }
 
@@ -61,7 +61,6 @@
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     margin-right: 110px;
   }
-  
   
 }
 
@@ -137,7 +136,7 @@
     height: 100vh;
     top: 0;
     right: 0;
-    z-index: 999;
+    z-index: 990;
     padding-top: 23px;
     padding-left: 21px;
     padding-right: 20px;
@@ -151,13 +150,6 @@
           }
    
 }
-
-    // .header_container {
-    //     display: flex;
-    //     flex-direction: column;
-    //     height: 100%;
-    // }
-
 
 .open-menu-btn {
   display: block;
@@ -241,11 +233,128 @@
   
 }
 
-
 .mobile-menu_link {
   color: $mainTextColor;
       &:hover,
       &:focus {
         color: $accentColor;
     }
+}
+
+// -------Modal-----
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(205, 171, 188, 0.614);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  transition: opacity 300ms, visibility 300ms;
+  &.is-hidden .modal {
+      transform: scale(1.5) rotate(270deg) translate(100px, 100px);
+  }
+}
+
+
+.modal {
+  width: 500px;
+  min-height: 600px;
+  background-color: $accentColor;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) rotate(0) translate(-50%, -50%);
+  transition: transform 300ms;
+  padding: 40px;
+  @media screen and (min-width: 320px ) and (max-width: 479px){
+    width: 100%;
+  }
+
+}
+
+.modal-title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $secondTitleColor;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal-form-field {
+  margin-bottom: 15px;
+}
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid $firstBorderColor;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: transparent;
+  color: $mainTextColor;
+  transition: border-color 300ms linear;
+  &:focus + .input-icon {
+      fill: $fourthTextColor;
+  }
+  &:focus {
+      border-color: $fourthTextColor;
+  }
+  &::placeholder {
+      font-size: 14px;
+      color: $fourthTextColor;
+      opacity: 0.5;
+  }
+}
+
+.modal-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid $firstBorderColor;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  background-color: transparent;
+  color: $mainTextColor;
+  margin-bottom: 15px;
+  transition: border-color 300ms linear;
+  &:focus {
+      border-color: $fourthTextColor;
+  }
+  &::placeholder {
+      font-size: 14px;
+      color: $fourthTextColor;
+      opacity: 0.7;
+  }
+}
+
+.modal-input-text {
+  font-size: 10px;
+  display: block;
+  margin-bottom: 7px;
+  color: $mainTextColor;
+}
+
+.modal-btn {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover svg {
+      fill: $mainBtnColor;
+  }
+}
+
+.input-btn-icon {
+  margin-left: 6px;
+  transition: fill 300ms linear;
 }
