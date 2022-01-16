@@ -1,1 +1,151 @@
+<header class="header">
 
+  <div class="header_container">
+
+      <picture class="header_logo">
+        <source srcset="
+        ./images/desktop/logo-desk-1x.png 1x,
+        ./images/desktop/logo-desk-2x.png 2x
+        "
+        media="(min-width:1200px)"
+        />
+
+        <source srcset="
+        ./images/tablet/logo-tab-1x.png 1x,
+        ./images/tablet/logo-tab-2x.png 2x
+        "
+        media="(min-width:768px)"
+        />
+
+        <source srcset="
+        ./images/mobile/logo-mob-1x.png 1x,
+        ./images/mobile/logo-mob-2x.png 2x
+        "
+        media="(min-width:320px)"
+        />
+
+        <img 
+        class="header_logo"
+        src="./images/desktop/logo-desk-1x.png" 
+        alt="logo"
+        >
+
+      </picture>
+     
+
+
+    <nav class="header_navigation">
+
+      
+      <ul class="header_menu-list list">
+
+        <li class="header_menu-item">
+          <a href="#main" class="header_menu-link link">Home</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#about" class="header_menu-link link">About us</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#howitmade" class="header_menu-link link">How it’s made?</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#products" class="header_menu-link link">Our products</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#contacts" class="header_menu-link link">Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <button class="open-menu-btn">
+      <svg class="btn_icon" width="20" heigth="12">
+        <use href="./images/svg-sprite/symbol-defs.svg#icon-burger"></use>
+    </svg>
+    </button>
+
+    <div class="header_button">
+      <button type="button" class="cta-btn">Buy now
+      
+          <svg class="cta-btn_icon" width="4" heigth="8">
+              <use href="./images/svg-sprite/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+      
+      </button>
+    </div>
+
+    
+
+  </div>
+
+
+  <div class="mobile-menu is-hidden">
+
+    <div class="mobile-menu_navigation">
+
+        <button class="close-menu-btn">
+          <svg class="btn_icon" width="14" heigth="14">
+            <use href="./images/svg-sprite/symbol-defs.svg#icon-close"></use>
+        </svg>
+        </button>
+
+        <div class="mobile-menu_button">
+          <button type="button" class="mobile-menu_cta-btn">Buy now
+          
+              <svg class="mobile-menu_cta-btn_icon" width="4" heigth="8">
+                  <use href="./images/svg-sprite/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+          
+          </button>
+    
+        </div>
+      
+      <ul class="mobile-menu_list list">
+
+        <li class="mobile-menu_item">
+          <div class="mobile-menu_content">
+          <a href="#main" class="mobile-menu_link link">Home</a>
+        </div>
+        </li>
+
+        <li class="mobile-menu_item">
+          <div class="mobile-menu_content">
+          <a href="#about" class="mobile-menu_link link">About us</a>
+        </div>
+        </li>
+
+        <li class="mobile-menu_item">
+          <div class="mobile-menu_content">
+          <a href="#howitmade" class="mobile-menu_link link">How it’s made?</a>
+        </div>
+        </li>
+
+        <li class="mobile-menu_item">
+          <div class="mobile-menu_content">
+          <a href="#products" class="mobile-menu_link link">Our products</a>
+        </div>
+        </li>
+
+        <li class="mobile-menu_item">
+          <div class="mobile-menu_content">
+          <a href="#contacts" class="mobile-menu_link link">Contact</a>
+        </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+    
+
+
+  </div>
+
+  </div>
+
+</header>
