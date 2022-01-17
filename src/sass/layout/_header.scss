@@ -1,0 +1,377 @@
+.header {
+  width: 100%;
+  height: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-top: 37px;
+  background: $headerBackgroundColor;
+  z-index: 996;
+
+  @media screen and (min-width: 768px) {
+    // padding-top: 0px;
+  }
+  // @media screen and (min-width: 320px) and (max-width: 480px){
+  //   padding-top: 10px;
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
+
+            &_wrapper {
+              display: flex;
+              align-items: center;
+              top: 0;
+            }
+
+          &_menu-list {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            display: flex;
+            align-items: center;
+
+                @media screen and (min-width: 320px) and (max-width: 479px) {
+                  display: none;
+                }
+                @media screen and (min-width: 480px) and (max-width: 768px) {
+                  display: none;
+                }
+          }
+}
+
+.header_logo {
+  min-width: 199px;
+  height: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-right: 110px;
+    margin-left: 26px;
+  }
+
+}
+
+.header_menu-item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header_menu-link {
+  cursor: pointer;
+  color: $mainTextColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $accentColor;
+    }
+}
+
+.header_button {
+  @media screen and (min-width: 768px) and (max-width: 1600px) {
+    margin-left: 110px;
+    margin-right: 34px;
+  }
+}
+
+.cta-btn {
+  width: 159px;
+  height: 44px;
+
+  background: $mainBackgroundColor;
+
+  border-radius: 22px;
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: $mainBtnTextColor;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: #ECEBEB;
+  }
+
+      .cta-btn_icon {
+        margin-left: 12px;
+      }
+
+      @media screen and (min-width: 320px ) and (max-width: 767px) {
+        display: none;
+      }
+
+      @media screen and (min-width: 768px ) {
+        margin-right: 15px;
+      }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-menu {
+    position: fixed;
+    background: $headerMobMenuColor;
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    width: 254px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 997;
+    padding-top: 23px;
+    padding-left: 21px;
+    padding-right: 20px;
+          @media screen and (min-width: 320px ) and (max-width: 479px){
+            width: 100vw;
+            top: 0;
+            left: 0;
+          }
+          @media screen and (min-width: 1200px ) {
+            display: none;
+          }
+
+}
+
+.open-menu-button {
+  height: 12px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+
+  background-color: transparent;
+  border-color: transparent;
+      @media screen and (min-width: 769px ) and (min-width: 1280px ) {
+        display: none;
+      }
+      @media screen and (min-width: 768px ) {
+        position: absolute;
+        top: 50px;
+        right: 224px;
+      }
+      @media screen and (min-width: 320px ) {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+      }
+}
+
+
+.close-menu-button {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border-color: transparent;
+  right: 28px;
+  top: 23px;
+}
+
+.button_icon {
+  width: 20px;
+  height: 12px;
+}
+
+.mobile-menu_cta-btn {
+  width: 186px;
+  height: 44px;
+  background: $mainBackgroundColor;
+  border-radius: 22px;
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $mainBtnTextColor;
+  margin-top: 23px;
+  margin-left: 11px;
+      @media screen and (min-width: 320px ) and (max-width: 479px){
+        width: 100%;
+      }
+
+  &:hover,
+  &:focus {
+    background: $firstBtnHoverColor;
+
+  }
+
+      .mobile-menu_cta-btn_icon {
+        margin-left: 12px;
+      }
+}
+
+.mobile-menu_button {
+  margin-bottom: 19px;
+}
+
+.mobile-menu_content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  margin-bottom: 22px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+}
+
+.mobile-menu_item {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+}
+
+.mobile-menu_border {
+  width: 100vw;
+  border-top: 1px solid #E18298;
+  border-left: none;
+      &:last-child {
+        border-bottom: 1px solid #E18298;
+      }
+  margin-left: -21px;
+}
+
+.mobile-menu_link {
+  color: $mainTextColor;
+      &:hover,
+      &:focus {
+        color: $accentColor;
+    }
+}
+
+-------Modal-----
+
+.submit-button {
+  border: 10px solid red;
+}
+
+.backdrop-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(205, 171, 188, 0.614);
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  transition: opacity 300ms, visibility 300ms;
+  &.is-hidden .modal_header {
+      transform: scale(1.5) rotate(270deg) translate(100px, 100px);
+  }
+}
+
+.modal_header {
+  width: 500px;
+  min-height: 600px;
+  background-color: $accentColor;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) rotate(0) translate(-50%, -50%);
+  transition: transform 300ms;
+  padding: 40px;
+  @media screen and (min-width: 320px ) and (max-width: 479px){
+    width: 100%;
+  }
+
+}
+
+.header-modal-title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $secondTitleColor;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header-modal-form-field {
+  margin-bottom: 15px;
+}
+.header-modal-input-wrap {
+  position: relative;
+}
+
+.header-modal-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid $firstBorderColor;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: transparent;
+  color: $mainTextColor;
+  transition: border-color 300ms linear;
+  &:focus + .header-input-icon {
+      fill: $fourthTextColor;
+  }
+  &:focus {
+      border-color: $fourthTextColor;
+  }
+  &::placeholder {
+      font-size: 14px;
+      color: $fourthTextColor;
+      opacity: 0.5;
+  }
+}
+
+.header-modal-text {
+  width: 100%;
+  height: 100px;
+  border: 1px solid $firstBorderColor;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  background-color: transparent;
+  color: $mainTextColor;
+  margin-bottom: 15px;
+  transition: border-color 300ms linear;
+  &:focus {
+      border-color: $fourthTextColor;
+  }
+  &::placeholder {
+      font-size: 14px;
+      color: $fourthTextColor;
+      opacity: 0.7;
+  }
+}
+
+.header-modal-input-text {
+  font-size: 10px;
+  display: block;
+  margin-bottom: 7px;
+  color: $mainTextColor;
+}
+
+.header-modal-btn {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover svg {
+      fill: $mainBtnColor;
+  }
+}
+
+.header-input-btn-icon {
+  margin-left: 6px;
+  transition: fill 300ms linear;
+}

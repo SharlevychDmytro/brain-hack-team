@@ -1,0 +1,226 @@
+.contacts{
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 8%,
+      #FFF5F6 8%,
+      #FFF5F6 40%,
+    );
+    @media screen and (min-width: 768px){
+      background-image: linear-gradient(
+      to bottom,
+      #ffffff 18%,
+      #FFF5F6 18%,
+      #FFF5F6 40%,
+    );
+    }
+   padding-top: 60px;
+ padding-bottom: 20px;
+  }
+  .contacts__container {
+    
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-right: 50px;
+   padding-left: 50px;
+   @media screen and (min-width: 768px){
+    padding-right: 36px;
+    padding-left: 36px;
+   }
+  
+   @media screen and (min-width: 480px) {
+     width: 480px;
+   }
+  
+   @media screen and (min-width: 768px) {
+     width: 768px;
+   }
+  
+   @media screen and (min-width: 1280px) {
+     width: 1280px;
+   }
+  }
+  .contacts__list{
+   margin-bottom: -20px;
+   @media screen and (min-width: 768px){
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: -20px;
+     
+   }
+  }
+  .contacts__list-item{
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   @media screen and (min-width: 768px){
+     width: calc(100% / 3 - 20px);
+     margin-left: 20px;
+   }
+   
+  }
+  .contacts__list-container{
+   padding-top: 43px;
+   padding-bottom: 43px;
+   padding-left: 20px;
+   padding-right: 20px;
+   
+   background: #FFFFFF;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  
+  }
+  .contacts__title-common{
+    display: inline-block;
+    padding: 0px 25px;
+    border-radius: 4px;
+    color: white;
+    font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  }
+  .contacts__title-container{
+  
+    background: #F0D1A5;
+  }
+  .contacts__title-second-container{
+    background: #C2E297;
+  }
+  .contacts__title{
+   
+   font-family: DM Sans;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 22px;
+   display: block;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   
+  }
+  .text-wrap{
+   border-bottom: 1px solid #E1E1E1;
+  }
+  .contacts__list-first-text{
+   font-family: DM Sans;
+   display: block;
+   margin-bottom: 10px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 186%;
+   letter-spacing: 0.04em;
+   color: #000000;
+  }
+  .contacts__list-second-text{
+   font-family: DM Sans;
+   display: block;
+   margin-bottom: 25px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 18px;
+   color: #907E82;
+  }
+  .time-list{
+   margin-top: 25px;
+   margin-bottom: 25px;
+   border-bottom: 1px solid #E1E1E1;
+  }
+  .time-list__item{
+   margin-bottom: 20px;
+   &:last-child{
+     margin-bottom: 25px;
+   }
+  }
+  .time-list__text{
+   font-family: DM Sans;
+   font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000000;
+  }
+  .time-list__hours{
+   font-family: DM Sans;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 186%;
+   color: #FFA5BA;
+  }
+
+  .nav-list__text{
+   font-family: DM Sans;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 183%;
+   color: #907E82;
+  }
+  .link {
+   text-decoration: none;
+  }
+  .contacts-list__btn{
+    margin-top: 50px;
+    @media screen and (min-width: 768px){
+      margin-top: 81px;
+      display: flex;	
+  justify-content: center;
+    }
+  }
+  .contacts-btn__common{
+    width: 162px;
+    height: 44px;
+    display: block;
+    padding: 10px auto;
+    margin: auto;
+  
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 22px;
+  }
+  .contacnts__list-first-btn{
+     color: #FFFFFF;
+     background: #D41342;
+  &:hover,
+  &:focus{
+    color: #D41342;
+    background: #ffffff;
+  }
+   }
+   .contacnts__list-second-btn{  
+      color: #D41342;
+      background: #ffffff;
+   &:hover,
+  &:focus{
+    color: #ffffff;
+    background: #D41342;
+  }
+    }
+   .contacts-item__btn{
+     margin-bottom: 10px;
+     &:last-child{
+       margin-bottom: 0;
+     }
+     @media screen and (min-width: 768px){
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+     }
+   }
+   

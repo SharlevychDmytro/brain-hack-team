@@ -1,1 +1,272 @@
+<header class="header">
 
+  <div class="header_container container">
+
+    <!-- ----Logo----- -->
+
+    <div class="header_wrapper">
+
+    <a href="#" class="header_main-logo">
+
+            <picture class="header_logo">
+              <source srcset="
+              ./images/desktop/logo-desk-1x.png 1x,
+              ./images/desktop/logo-desk-2x.png 2x
+              "
+              media="(min-width:1200px)"
+              />
+
+              <source srcset="
+              ./images/tablet/logo-tab-1x.png 1x,
+              ./images/tablet/logo-tab-2x.png 2x
+              "
+              media="(min-width:768px)"
+              />
+
+              <source srcset="
+              ./images/mobile/logo-mob-1x.png 1x,
+              ./images/mobile/logo-mob-2x.png 2x
+              "
+              media="(min-width:320px)"
+              />
+
+              <img 
+              class="header_logo"
+              src="./images/desktop/logo-desk-1x.png" 
+              alt="logo"
+              >
+
+            </picture>
+          </a>
+     <!-- -----Menu---- -->
+
+    <nav class="header_navigation">
+
+      
+      <ul class="header_menu-list list">
+
+        <li class="header_menu-item">
+          <a href="#main" class="header_menu-link link">Home</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#about" class="header_menu-link link">About us</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#howitmade" class="header_menu-link link">How it’s made?</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#products" class="header_menu-link link">Our products</a>
+        </li>
+
+        <li class="header_menu-item">
+          <a href="#contacts" class="header_menu-link link">Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+        <!-- ------Burger menu---- -->
+
+
+    <button type="button" class="open-menu-button" >
+      <svg class="button_icon" width="20" heigth="12">
+        <use href="./images/svg-sprite/symbol-defs.svg#icon-Burger"></use>
+    </svg>
+    </button>
+
+
+         <!-- ------CTA BTN---- -->
+
+
+    <div class="header_button">
+      <button type="button" class="cta-btn" data-modal-open> Buy now
+      
+          <svg class="cta-btn_icon" width="4" heigth="8">
+              <use href="./images/svg-sprite/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+      
+      </button>
+    </div>
+
+  </div>
+
+  </div>
+
+          <!-- --------MObile Menu----- -->
+
+
+  <div class="mobile-menu is-hidden">
+
+    <div class="mobile-menu_navigation">
+
+        <button class="close-menu-button">
+          <svg class="button_icon" width="14" heigth="14">
+            <use href="./images/svg-sprite/symbol-defs.svg#icon-close"></use>
+        </svg>
+        </button>
+
+      
+
+        <div class="mobile-menu_button">
+          <button type="button" class="mobile-menu_cta-btn" data-modal-open> Buy now
+          
+              <svg class="mobile-menu_cta-btn_icon" width="4" heigth="8">
+                  <use href="./images/svg-sprite/symbol-defs.svg#icon-arrow"></use>
+              </svg>
+          
+          </button>
+    
+        </div>
+      
+      <ul class="mobile-menu_list list">
+
+            <div class="mobile-menu_border">
+              <li class="mobile-menu_item">
+                <div class="mobile-menu_content">
+                <a href="#main" class="mobile-menu_link link">Home</a>
+              </div>
+              </li>
+            </div>
+
+            <div class="mobile-menu_border">
+              <li class="mobile-menu_item">
+                <div class="mobile-menu_content">
+                <a href="#about" class="mobile-menu_link link">About us</a>
+              </div>
+              </li>
+            </div>
+
+            <div class="mobile-menu_border">
+              <li class="mobile-menu_item">
+                <div class="mobile-menu_content">
+                <a href="#howitmade" class="mobile-menu_link link">How it’s made?</a>
+              </div>
+              </li>
+            </div>
+
+            <div class="mobile-menu_border">
+              <li class="mobile-menu_item">
+                <div class="mobile-menu_content">
+                <a href="#products" class="mobile-menu_link link">Our products</a>
+              </div>
+              </li>
+            </div>
+
+            <div class="mobile-menu_border">
+              <li class="mobile-menu_item">
+                <div class="mobile-menu_content">
+                <a href="#contacts" class="mobile-menu_link link">Contact</a>
+              </div>
+              </li>
+            </div>
+
+      </ul>
+
+    </div>
+
+    
+
+
+  </div>
+
+  </div>
+
+</header>
+
+              <!-- ------Modal---- -->
+
+              <div class="backdrop-modal is-hidden" data-modal>
+
+                <div class="modal_header">
+              
+                    <button class="close-menu-button" data-modal-close>
+                      <svg class="button_icon" width="14" heigth="14">
+                        <use href="./images/svg-sprite/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                    </button>
+              
+                    <p class="header-modal-title">I want a kilo of delicious ice cream!</p>
+              
+                    <form action="#" class="header-modal-form">
+                      <div class="modal-form-field">
+                          <label for="user-name" class="header-modal-input-text"
+                              >Name</label
+                          >
+                          <div class="header-modal-input-wrap">
+                              <input
+                                  type="text"
+                                  minlength="2"
+                                  name="user-name"
+                                  class="header-modal-input"
+                                  placeholder="John Dou *"
+                                  required="required"
+                                  id="user-name"
+                              />
+              
+                          </div>
+                      </div>
+              
+                      <div class="header-modal-form-field">
+                        <label for="user-email" class="header-modal-input-text">
+                            Email</label
+                        >
+                        <div class="header-modal-input-wrap">
+                            <input
+                                type="email"
+                                name="user-email"
+                                class="header-modal-input"
+                                placeholder="write your email"
+                                id="user-email"
+                            />
+              
+                        </div>
+                    </div>
+                    <div class="header-modal-form-field">
+                        <label for="user-tel" class="header-modal-input-text">
+                            Phone number</label
+                        >
+                        <div class="header-modal-input-wrap">
+                            <input
+                                type="tel"
+                                name="user-tel"
+                                id="user-tel"
+                                class="header-modal-input"
+                                required
+                                placeholder="+38 (098) 111-11-11 *"
+                            />
+              
+                        </div>
+                    </div>
+                    <div class="header-modal-form-field">
+                        <label for="user-text" class="header-modal-input-text">
+                            How many kilo do you want?</label
+                        >
+                        <textarea
+                            name="user-text"
+                            id="user-text"
+                            class="header-modal-text"
+                            placeholder="write here"
+                            maxlength="10"
+                        ></textarea>
+                    </div>
+              
+              
+                  <button type="submit" class="header-modal-btn cta-btn">
+                      Submit<svg
+                          class="header-input-btn-icon cta-btn_icon"
+                          width="18"
+                          height="18"
+                      >
+                          <use
+                              href="./images/svg-sprite/symbol-defs.svg#icon-arrow"
+                          ></use>
+                      </svg>
+                  </button>
+              </form>
+                </div>
+              
+              </div>
