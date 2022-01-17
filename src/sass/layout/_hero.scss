@@ -13,14 +13,17 @@
   flex-direction: column;
   justify-content: space-between;
   
-  padding-top: 94px;
-  padding-right: 34px;
-  padding-left: 154px;
-  padding-bottom: 34px;
+  // padding-top: 94px;
+  // padding-right: 34px;
+  // padding-left: 154px;
+  // padding-bottom: 34px;
 
   @media screen and (min-width:768px) {
-    width: 768px;
     height: 399px;
+  }
+
+  @media screen and (min-width:1280px) {
+    height: 665px;
   }
 }
 
@@ -101,21 +104,29 @@
 
   color: $secondTitleColor;
 
-  &--color{
-    font-size: 48px;
-    line-height: 0.965;
+    &--color{
+      font-size: 48px;
+      line-height: 0.965;
 
-    color: $mainTitleColor;
+      color: $mainTitleColor;
 
-    @media screen and (min-width:768px) {
-      font-size: 34px;
+      @media screen and (min-width:768px) {
+        font-size: 34px;
+      }
+
+      @media screen and (min-width:1280px){
+      font-size: 58px;
     }
-  }
+    }
 
   @media screen and (min-width:768px) {
     margin-bottom: 20px;
-
     font-size: 22px;
+  }
+
+  @media screen and (min-width:1280px){
+    margin-bottom: 25px;
+    font-size: 38px;
   }
 }
 
@@ -134,7 +145,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 62px;
+  min-width: 62px;
   min-height: 24px;
   border-radius: 20px;
 
@@ -156,7 +167,6 @@
 
   &:hover,
   &:focus{
-    // 1-й вариант
     background-color: $mainBackgroundColor;
     color: $mainBtnTextColor;
 
@@ -164,17 +174,15 @@
       background-color: $sendBtnColor;
       color: $sendBtnTextColor;
     }
-    
+  }
 
-    // 2-й вариант
-
-    // background-color: $fourthTextColor;
-    // color: $accentColor;
-
-    // &.hero__button--light{
-    //   color: $sendBtnTextColor;
-    // }
-    
+  @media screen and(min-width:1280px) {
+    min-width: 104px;
+    min-height: 40px;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 14px;
+    line-height: 1.302;
   }
 }
 
