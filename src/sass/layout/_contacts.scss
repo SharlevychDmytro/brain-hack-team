@@ -5,8 +5,16 @@
       #FFF5F6 8%,
       #FFF5F6 40%,
     );
+    @media screen and (min-width: 768px){
+      background-image: linear-gradient(
+      to bottom,
+      #ffffff 18%,
+      #FFF5F6 18%,
+      #FFF5F6 40%,
+    );
+    }
    padding-top: 60px;
- padding-bottom: 5px;
+ padding-bottom: 20px;
   }
   .contacts__container {
     
@@ -15,6 +23,10 @@
    margin-right: auto;
    padding-right: 50px;
    padding-left: 50px;
+   @media screen and (min-width: 768px){
+    padding-right: 36px;
+    padding-left: 36px;
+   }
   
    @media screen and (min-width: 480px) {
      width: 480px;
@@ -24,17 +36,27 @@
      width: 768px;
    }
   
-   @media screen and (min-width: 1200px) {
-     width: 1200px;
+   @media screen and (min-width: 1280px) {
+     width: 1280px;
    }
   }
   .contacts__list{
    margin-bottom: -20px;
+   @media screen and (min-width: 768px){
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: -20px;
+     
+   }
   }
   .contacts__list-item{
    margin-bottom: 20px;
    margin-left: auto;
    margin-right: auto;
+   @media screen and (min-width: 768px){
+     width: calc(100% / 3 - 20px);
+     margin-left: 20px;
+   }
    
   }
   .contacts__list-container{
@@ -132,6 +154,7 @@
    line-height: 186%;
    color: #FFA5BA;
   }
+
   .nav-list__text{
    font-family: DM Sans;
    font-weight: 500;
@@ -144,6 +167,11 @@
   }
   .contacts-list__btn{
     margin-top: 50px;
+    @media screen and (min-width: 768px){
+      margin-top: 81px;
+      display: flex;	
+  justify-content: center;
+    }
   }
   .contacts-btn__common{
     width: 162px;
@@ -187,6 +215,12 @@
      margin-bottom: 10px;
      &:last-child{
        margin-bottom: 0;
+     }
+     @media screen and (min-width: 768px){
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
      }
    }
    
