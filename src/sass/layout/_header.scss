@@ -2,16 +2,16 @@
   width: 100%;
   height: 100px;
 
-  position: relative;
   position: absolute;
   top: 0;
   left: 0;
 
   padding-top: 37px;
-  background: $headerBackgroundColor;
+  background: transparent;
+  // background-color: #ffb8ca88;
   z-index: 996;
 
-  @media screen and (min-width: 320px) and (max-width: 480px){
+  @media screen and (max-width: 767px){
     padding-top: 6px;
   }
 
@@ -28,10 +28,7 @@
             display: flex;
             align-items: center;
 
-                @media screen and (min-width: 320px) and (max-width: 479px) {
-                  display: none;
-                }
-                @media screen and (min-width: 480px) and (max-width: 768px) {
+                @media screen and (max-width: 1279px) {
                   display: none;
                 }
           }
@@ -70,11 +67,7 @@
 }
 
 .header_button {
-  // @media screen and (min-width: 768px) {
-  //   margin-left: 341px;
-  //   margin-right: 14px;
-  // }
-
+ 
   @media screen and (min-width: 1280px) {
     margin-left: 110px;
     margin-right: 34px;
@@ -112,14 +105,15 @@
         margin-left: 12px;
       }
 
-      @media screen and (min-width: 320px ) and (max-width: 480px) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
 
-      @media screen and (min-width: 768px ) {
-        position: absolute;
-        top: 38px;
-        right: 34px;
+      @media screen and (min-width: 768px) and (max-width: 1279px )  {
+        // position: absolute;
+        // top: 38px;
+        // right: 34px;
+        margin-left: 30px;
       }
       
 }
@@ -158,26 +152,35 @@
   display: block;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  margin-left: auto;
+  // position: absolute;
   top: 0;
 
   background-color: transparent;
   border-color: transparent;
-      @media screen and (min-width: 1200px ) {
+      @media screen and (min-width: 1280px ) {
         display: none;
       }
       @media screen and (min-width: 768px ) {
-        position: absolute;
+        // position: absolute;
         top: 50px;
         right: 224px;
       }
       @media screen and (min-width: 320px ) and (max-width: 480px ) {
-        position: absolute;
+        // position: absolute;
         top: 21px;
         right: 20px;
       }
 }
 
+.close-mobile-menu-cross-button {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border-color: transparent;
+  right: 28px;
+  top: 23px;
+}
 
 .close-menu-button {
   display: block;
@@ -186,6 +189,21 @@
   border-color: transparent;
   right: 28px;
   top: 23px;
+  @media screen and (min-width: 320px ) and (max-width: 480px ) {
+    display: none;
+  }
+}
+
+.close-menu-modal-button {
+  
+  @media screen and (min-width: 320px ) and (max-width: 480px ) {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border-color: transparent;
+    right: 28px;
+    top: 23px;
+  }
 }
 
 .button_icon {
