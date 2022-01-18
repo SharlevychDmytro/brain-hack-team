@@ -1,16 +1,19 @@
 .about-section {
-    // background: $accent-bg-color;
+   
     background: $secondBackgroundColor;
     padding-top: 125px;
     padding-bottom: 20px;
+    background-size: contain;
     @media screen and (max-width: 767px){
     background-image: url(../images/mobile/milk-mob-1x.png);
     background-repeat: no-repeat;
     background-position: 0 88%;
-    // background-position: bottom;
-    // background-size:contain;
+    // background-size: 768px;
+    
+   
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/mobile/milk-mob-2x.png);
+    
     }
     }
     @media screen and (min-width: 768px) {
@@ -138,6 +141,7 @@
     &__text {
     font-weight: 500;
     font-size: 12px;
+    letter-spacing: 0.04em;
     line-height: 1.62;
     color: $thirdTextColor;
     margin-bottom: 17px;
