@@ -9,18 +9,21 @@
   height: 502px;
   overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
   
-  padding-top: 94px;
-  padding-right: 34px;
-  padding-left: 154px;
-  padding-bottom: 34px;
+  // padding-top: 94px;
+  // padding-right: 34px;
+  // padding-left: 154px;
+  // padding-bottom: 34px;
 
   @media screen and (min-width:768px) {
-    width: 768px;
     height: 399px;
+  }
+
+  @media screen and (min-width:1280px) {
+    height: 665px;
   }
 }
 
@@ -179,6 +182,10 @@
 }
 
 .hero__outlets{
+  position: absolute;
+  right: 34px;
+  bottom: 205px;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -239,7 +246,14 @@
 }
 
 .hero-box{
+  position: absolute;
+  left: 154px;
+  bottom: 34px;
   width: 114px;
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+  }
 }
 
 .hero__text{
