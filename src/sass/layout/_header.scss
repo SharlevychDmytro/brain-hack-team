@@ -186,6 +186,21 @@
   border-color: transparent;
   right: 28px;
   top: 23px;
+  @media screen and (min-width: 320px ) and (max-width: 480px ) {
+    display: none;
+  }
+}
+
+.close-menu-modal-button {
+  
+  @media screen and (min-width: 320px ) and (max-width: 480px ) {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border-color: transparent;
+    right: 28px;
+    top: 23px;
+  }
 }
 
 .button_icon {
