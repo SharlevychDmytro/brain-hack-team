@@ -1,5 +1,9 @@
 .gallery {
-  background-image: linear-gradient(to bottom, $secondBackgroundColor 30%, $mainBackgroundColor);
+  background-image: linear-gradient(
+    to bottom,
+    $secondBackgroundColor 30%,
+    $mainBackgroundColor
+  );
   padding-bottom: 60px;
 }
 .gallery-container {
@@ -11,9 +15,7 @@
     max-width: 1280px;
   }
 }
-.gallery__title {
-  display: none;
-}
+
 // .gallery__items {
 //   display: flex;
 //   justify-content: center;

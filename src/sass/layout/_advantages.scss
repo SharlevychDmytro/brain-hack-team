@@ -6,10 +6,6 @@
   background-color: $secondBackgroundColor;
 }
 
-.advantages-section-title {
-  display: none;
-}
-
 .advantages-list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -86,35 +82,35 @@
 }
 
 .advantages-title--basket::before {
-  content: '';
-  background-image: url('../images/mobile/bucket-mob-1x.png');
+  content: "";
+  background-image: url("../images/mobile/bucket-mob-1x.png");
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/bucket-mob-2x.png');
+    background-image: url("../images/mobile/bucket-mob-2x.png");
   }
 }
 
 .advantages-title--apples::before {
-  content: '';
-  background-image: url('../images/mobile/apples-mob-1x.png');
+  content: "";
+  background-image: url("../images/mobile/apples-mob-1x.png");
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/apples-mob-1x.png');
+    background-image: url("../images/mobile/apples-mob-1x.png");
   }
 }
 
 .advantages-title--heart::before {
-  content: '';
-  background-image: url('../images/mobile/heart-mob-1x.png');
+  content: "";
+  background-image: url("../images/mobile/heart-mob-1x.png");
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/mobile/heart-mob-2x.png');
+    background-image: url("../images/mobile/heart-mob-2x.png");
   }
 }
 
