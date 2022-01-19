@@ -1,8 +1,8 @@
 <section class="gallery section">
-    <div class="container gallery-container ">
-        <h2 class="gallery__title">Gallery</h2>
-        <!-- first version------------------------ -->
-        <!-- <div class="gallery__items">
+  <div class="container gallery-container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <!-- first version------------------------ -->
+    <!-- <div class="gallery__items">
 
             <picture gallery__img>
                 <source srcset="
@@ -20,59 +20,294 @@
                 <img src="images/gallery-img/main-pic10-dt-1x.jpg" alt="pictures of gallery" />
             </picture>
         </div> -->
-        <!-- second version---------------------------------- -->
-        <div class="gallery-grid box">
-            <div class="img1 thumb">
-                <picture class="grid-img1">
-                    <img src="./images/gallery-img/1-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img2 thumb">
-                <picture>
-                    <img src="./images/gallery-img/2-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img3 thumb">
-                <picture>
-                    <img src="./images/gallery-img/3-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img4 thumb">
-                <picture>
-                    <img src="./images/gallery-img/4-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img5 thumb">
-                <picture>
-                    <img src="./images/gallery-img/5-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img6 thumb">
-                <picture class="img6-grid">
-                    <img src="./images/gallery-img/6-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img7 thumb">
-                <picture>
-                    <img src="./images/gallery-img/7-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-        
-            <div class="img8 thumb">
-                <picture>
-                    <img src="./images/gallery-img/8-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img9 thumb">
-                <picture>
-                    <img src="./images/gallery-img/9-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-            <div class="img10 thumb">
-                <picture>
-                    <img src="./images/gallery-img/10-opt-2x.jpg" alt="">
-                </picture>
-            </div>
-        </div>
+    <!-- second version---------------------------------- -->
+    <div class="gallery-grid box">
+      <div class="img1 gallery-thumb">
+        <picture class="grid-img1">
+          <source
+            srcset="
+              ./images/gallery-img/1-dt-1x.jpg 1x,
+              ./images/gallery-img/1-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/1-tab-1x.jpg 1x,
+              ./images/gallery-img/1-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/1-mob-1x.jpg 1x,
+              ./images/gallery-img/1-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img
+            src="./images/gallery-img/1-dt-1x.jpg"
+            alt="ice cream-coctaile"
+          />
+        </picture>
+      </div>
+      <div class="img2 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/2-dt-1x.jpg 1x,
+              ./images/gallery-img/2-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/2-tab-1x.jpg 1x,
+              ./images/gallery-img/2-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/2-mob-1x.jpg 1x,
+              ./images/gallery-img/2-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img src="./images/gallery-img/2-dt-1x.jpg" alt="ice cream" />
+        </picture>
+      </div>
+      <div class="img3 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/3-dt-1x.jpg 1x,
+              ./images/gallery-img/3-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/3-tab-1x.jpg 1x,
+              ./images/gallery-img/3-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/3-mob-1x.jpg 1x,
+              ./images/gallery-img/3-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img src="./images/gallery-img/3-dt-1x.jpg" alt="pink ice cream" />
+        </picture>
+      </div>
+      <div class="img4 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/4-dt-1x.jpg 1x,
+              ./images/gallery-img/4-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/4-tab-1x.jpg 1x,
+              ./images/gallery-img/4-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/4-mob-1x.jpg 1x,
+              ./images/gallery-img/4-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img src="./images/gallery-img/4-dt-1x.jpg" alt="more ice cream" />
+        </picture>
+      </div>
+      <div class="img5 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/5-dt-1x.jpg 1x,
+              ./images/gallery-img/5-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/5-tab-1x.jpg 1x,
+              ./images/gallery-img/5-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/5-mob-1x.jpg 1x,
+              ./images/gallery-img/5-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img
+            src="./images/gallery-img/5-dt-1x.jpg"
+            alt="girl with ice cream"
+          />
+        </picture>
+      </div>
+      <div class="img6 gallery-thumb">
+        <picture class="img6-grid">
+          <source
+            srcset="
+              ./images/gallery-img/6-dt-1x.jpg 1x,
+              ./images/gallery-img/6-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/6-tab-1x.jpg 1x,
+              ./images/gallery-img/6-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/6-mob-1x.jpg 1x,
+              ./images/gallery-img/6-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img
+            src="./images/gallery-img/6-dt-1x.jpg"
+            alt="ice cream sandwich"
+          />
+        </picture>
+      </div>
+      <div class="img7 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/7-dt-1x.jpg 1x,
+              ./images/gallery-img/7-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/7-tab-1x.jpg 1x,
+              ./images/gallery-img/7-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/7-mob-1x.jpg 1x,
+              ./images/gallery-img/7-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img
+            src="./images/gallery-img/7-dt-1x.jpg"
+            alt="ice cream on a street"
+          />
+        </picture>
+      </div>
+
+      <div class="img8 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/8-dt-1x.jpg 1x,
+              ./images/gallery-img/8-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/8-tab-1x.jpg 1x,
+              ./images/gallery-img/8-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/8-mob-1x.jpg 1x,
+              ./images/gallery-img/8-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img src="./images/gallery-img/8-dt-1x.jpg" alt="dog and ice cream" />
+        </picture>
+      </div>
+      <div class="img9 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/9-dt-1x.jpg 1x,
+              ./images/gallery-img/9-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/9-tab-1x.jpg 1x,
+              ./images/gallery-img/9-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/9-mob-1x.jpg 1x,
+              ./images/gallery-img/9-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img src="./images/gallery-img/9-dt-1x.jpg" alt="ice-coctaile" />
+        </picture>
+      </div>
+      <div class="img10 gallery-thumb">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery-img/10-dt-1x.jpg 1x,
+              ./images/gallery-img/10-dt-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/10-tab-1x.jpg 1x,
+              ./images/gallery-img/10-tab-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-img/10-mob-1x.jpg 1x,
+              ./images/gallery-img/10-mob-2x.jpg 2x
+            "
+            media="(min-width:320px)"
+          />
+
+          <img
+            src="./images/gallery-img/10-dt-1x.jpg"
+            alt="ice cream on orange background"
+          />
+        </picture>
+      </div>
     </div>
+  </div>
 </section>
