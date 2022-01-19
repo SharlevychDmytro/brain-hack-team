@@ -1,13 +1,17 @@
 .customer-reviews-section {
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 26px;
   @media screen and (min-width: 768px) {
     padding-top: 121px;
     padding-bottom: 112px;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 123px;
-    padding-bottom: 99px;
+    padding-top: 61px;
+    padding-bottom: 59px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 63px;
+    padding-bottom: 72px;
   }
 }
 .customer-reviews-section__container {
