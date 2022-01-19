@@ -10,27 +10,27 @@
   background: transparent;
   z-index: 996;
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     padding-top: 6px;
   }
 
-            &_wrapper {
-              display: flex;
-              align-items: center;
-              top: 0;
-            }
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    top: 0;
+  }
 
-          &_menu-list {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.31;
-            display: flex;
-            align-items: center;
+  &_menu-list {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
 
-                @media screen and (max-width: 1279px) {
-                  display: none;
-                }
-          }
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
 }
 
 .header_logo {
@@ -41,7 +41,6 @@
     margin-left: 8px;
     margin-top: 0;
   }
-
 }
 
 .header_logo-pic {
@@ -59,14 +58,13 @@
   cursor: pointer;
   color: $mainTextColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        color: $accentColor;
-    }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .header_button {
- 
   @media screen and (min-width: 1280px) {
     margin-left: 110px;
     margin-right: 34px;
@@ -94,24 +92,25 @@
   color: $mainBtnTextColor;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
   &:hover,
   &:focus {
-    background: #ECEBEB;
+    background: #ecebeb;
   }
 
-      .cta-btn_icon {
-        margin-left: 12px;
-      }
+  .cta-btn_icon {
+    margin-left: 12px;
+  }
 
-      @media screen and (max-width: 767px) {
-        display: none;
-      }
-
-      @media screen and (min-width: 768px) and (max-width: 1279px )  {
-        margin-left: 30px;
-      }
-      
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    // position: absolute;
+    // top: 38px;
+    // right: 34px;
+    margin-left: 30px;
+  }
 }
 
 .is-hidden {
@@ -121,26 +120,25 @@
 }
 
 .mobile-menu {
-    position: fixed;
-    background: $headerMobMenuColor;
-    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
-    width: 254px;
-    height: 100vh;
+  position: fixed;
+  background: $headerMobMenuColor;
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  width: 254px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 997;
+  padding-top: 23px;
+  padding-left: 21px;
+  padding-right: 20px;
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 100vw;
     top: 0;
-    right: 0;
-    z-index: 997;
-    padding-top: 23px;
-    padding-left: 21px;
-    padding-right: 20px;
-          @media screen and (min-width: 320px ) and (max-width: 479px){
-            width: 100vw;
-            top: 0;
-            left: 0;
-          }
-          @media screen and (min-width: 1200px ) {
-            display: none;
-          }
-
+    left: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .open-menu-button {
@@ -211,19 +209,18 @@
   color: $mainBtnTextColor;
   margin-top: 23px;
   margin-left: 11px;
-      @media screen and (min-width: 320px ) and (max-width: 479px){
-        width: 100%;
-      }
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    width: 100%;
+  }
 
   &:hover,
   &:focus {
     background: $firstBtnHoverColor;
-
   }
 
-      .mobile-menu_cta-btn_icon {
-        margin-left: 12px;
-      }
+  .mobile-menu_cta-btn_icon {
+    margin-left: 12px;
+  }
 }
 
 .mobile-menu_button {
@@ -236,9 +233,9 @@
   font-size: 14px;
   line-height: 1.28;
   margin-bottom: 22px;
-      &:last-child {
-        margin-bottom: 0;
-      }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .mobile-menu_item {
@@ -250,25 +247,23 @@
 
 .mobile-menu_border {
   width: 100vw;
-  border-top: 1px solid #E18298;
+  border-top: 1px solid #e18298;
   border-left: none;
-      &:last-child {
-        border-bottom: 1px solid #E18298;
-      }
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
   margin-left: -21px;
 }
 
 .mobile-menu_link {
   color: $mainTextColor;
-      &:hover,
-      &:focus {
-        color: $accentColor;
-    }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
--------Modal-----
-
-.submit-button {
+-------Modal----- .submit-button {
   border: 10px solid red;
 }
 
@@ -282,7 +277,7 @@
   left: 0;
   transition: opacity 300ms, visibility 300ms;
   &.is-hidden .modal_header {
-      transform: scale(1.5) rotate(270deg) translate(100px, 100px);
+    transform: scale(1.5) rotate(270deg) translate(100px, 100px);
   }
 }
 
@@ -297,10 +292,9 @@
   transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 300ms;
   padding: 40px;
-  @media screen and (min-width: 320px ) and (max-width: 479px){
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 100%;
   }
-
 }
 
 .header-modal-title {
@@ -332,15 +326,15 @@
   color: $mainTextColor;
   transition: border-color 300ms linear;
   &:focus + .header-input-icon {
-      fill: $fourthTextColor;
+    fill: $fourthTextColor;
   }
   &:focus {
-      border-color: $fourthTextColor;
+    border-color: $fourthTextColor;
   }
   &::placeholder {
-      font-size: 14px;
-      color: $fourthTextColor;
-      opacity: 0.5;
+    font-size: 14px;
+    color: $fourthTextColor;
+    opacity: 0.5;
   }
 }
 
@@ -357,12 +351,12 @@
   margin-bottom: 15px;
   transition: border-color 300ms linear;
   &:focus {
-      border-color: $fourthTextColor;
+    border-color: $fourthTextColor;
   }
   &::placeholder {
-      font-size: 14px;
-      color: $fourthTextColor;
-      opacity: 0.7;
+    font-size: 14px;
+    color: $fourthTextColor;
+    opacity: 0.7;
   }
 }
 
@@ -379,7 +373,7 @@
   align-items: center;
   justify-content: center;
   &:hover svg {
-      fill: $mainBtnColor;
+    fill: $mainBtnColor;
   }
 
   width: 159px;
@@ -402,10 +396,9 @@
   color: $mainBtnTextColor;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
   &:hover,
   &:focus {
-    background: #ECEBEB;
+    background: #ecebeb;
   }
 }
 
