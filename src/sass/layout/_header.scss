@@ -172,14 +172,14 @@
   border-color: transparent;
   right: 28px;
   top: 23px;
-  @media screen and (min-width: 320px ) and (max-width: 480px ) {
+  @media screen and (max-width: 480px ) {
     display: none;
   }
 }
 
 .close-menu-modal-button {
-  
-  @media screen and (min-width: 320px ) and (max-width: 480px ) {
+  display: none;
+  @media screen and (max-width: 480px ) {
     display: block;
     margin-left: auto;
     background-color: transparent;
@@ -315,6 +315,7 @@
 .header-modal-form-field {
   margin-bottom: 15px;
 }
+
 .header-modal-input-wrap {
   position: relative;
 }
