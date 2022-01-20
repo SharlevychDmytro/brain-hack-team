@@ -1,6 +1,4 @@
 .about-section {
-   
-    background: $secondBackgroundColor;
     padding-top: 125px;
     padding-bottom: 20px;
     background-size: contain;
@@ -9,8 +7,7 @@
     background-image: url(../images/mobile/milk-mob-1x.png);
     background-repeat: no-repeat;
     background-position: 0 88%;
-    // background-position: 50%;
-    // background-size: 768px;
+    
     
    
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -77,7 +74,11 @@
     }
     }
 }
-
+.about-section {
+    background-image: linear-gradient(
+        to top
+        ,#fff5f6 30%,#fff);
+}
 .about-content {
     @media screen and (min-width: 768px) {
     display: flex;
