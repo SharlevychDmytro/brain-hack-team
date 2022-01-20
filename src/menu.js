@@ -3,6 +3,7 @@
       openMenuBtn: document.querySelector(".open-menu-button"),
       closeMenuBtn: document.querySelector(".close-mobile-menu-cross-button"),
       menu: document.querySelector(".mobile-menu"),
+      ctaButton: document.querySelector(".cta-btn")
   };
 
   refs.openMenuBtn.addEventListener("click", toggleMenu);
@@ -10,14 +11,15 @@
 
   function toggleMenu() {
       refs.menu.classList.toggle("is-hidden");
-      // refs.openMenuBtn.classList.toggle("is-hidden");
+      refs.openMenuBtn.classList.toggle("is-hidden");
+      refs.ctaButton.classList.toggle("is-hidden");
   }
 })();
 
 // (() => {
 //   const mobileMenu = document.querySelector('.mobile-menu');
 //   const openMenuBtn = document.querySelector('.open-menu-button');
-//   const closeMenuBtn = document.querySelector('.close-menu-button');
+//   const closeMenuBtn = document.querySelector('.close-mobile-menu-cross-button');
 //   const toggleMenu = () => {
 //     const isMenuOpen =
 //       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
