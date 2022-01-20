@@ -4,10 +4,12 @@
     padding-top: 125px;
     padding-bottom: 20px;
     background-size: contain;
+    max-width: 100%;
     @media screen and (max-width: 767px){
     background-image: url(../images/mobile/milk-mob-1x.png);
     background-repeat: no-repeat;
     background-position: 0 88%;
+    // background-position: 50%;
     // background-size: 768px;
     
    
@@ -24,8 +26,8 @@
     background-image: url(../images/desktop/about-milk-desk-1x.png);
 
     background-repeat: no-repeat;
-    background-position: 0 115%;
-    background-size:contain;
+    background-position: center;
+    background-size: 100%;
     padding-top: 125px;
     padding-bottom: 20px;
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),

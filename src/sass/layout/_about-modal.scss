@@ -69,7 +69,6 @@
   top: 0;
   right: 0;
   
-  // border: none;
   margin: 8px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -87,14 +86,14 @@
   &:hover,
   &:focus {
     color: $accentColor;
-    background: #c9667d;
+    background-color: #c9667d;
   }
 }
 
 .about-button-close__icon {
   width: 18px;
   height: 18px;
-  fill: currentColor;;
+  fill: currentColor;
 }
 
 .about-section-modal__title {
