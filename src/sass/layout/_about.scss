@@ -1,30 +1,32 @@
 .about-section {
-    padding-top: 125px;
-    padding-bottom: 20px;
-    background-size: contain;
-    max-width: 100%;
-    @media screen and (max-width: 767px){
+  background: $secondBackgroundColor;
+  padding-top: 125px;
+  padding-bottom: 20px;
+  background-size: contain;
+  max-width: 100%;
+  @media screen and (max-width: 767px) {
     background-image: url(../images/mobile/milk-mob-1x.png);
     background-repeat: no-repeat;
     background-position: 0 88%;
-    
-    
-   
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/milk-mob-2x.png);
-    
+    // background-position: 50%;
+    // background-size: 768px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/milk-mob-2x.png);
     }
-    }
-    @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
     padding-top: 130px;
     padding-bottom: 33px;
-    }
-    @media screen and (min-width: 1280px) {
+  }
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/desktop/about-milk-desk-1x.png);
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
     padding-top: 125px;
     padding-bottom: 20px;
     @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
@@ -32,12 +34,12 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/desktop/about-milk-desk-2x.png);
     }
-    }
+  }
 
-    &__label {
+  &__label {
     text-align: center;
     margin-bottom: 15px;
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -46,14 +48,14 @@
     color: $fourthTextColor;
 
     @media screen and (min-width: 1280px) {
-        font-size: 30px; 
+      font-size: 30px;
     }
-    }
+  }
 
-    &__title {
+  &__title {
     text-align: center;
     margin-bottom: 26px;
-    font-family: 'Titan One';
+    font-family: "Titan One";
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -63,16 +65,16 @@
     color: $mainTitleColor;
 
     @media screen and (min-width: 768px) {
-    padding: 0;
-    margin-bottom: 50px;
+      padding: 0;
+      margin-bottom: 50px;
     }
 
     @media screen and (min-width: 1280px) {
-    padding: 0;
-    margin-bottom: 55px;
-    font-size: 58px;
+      padding: 0;
+      margin-bottom: 55px;
+      font-size: 58px;
     }
-    }
+  }
 }
 .about-section {
     background-image: linear-gradient(
@@ -80,68 +82,67 @@
         ,#fff5f6 30%,#fff);
 }
 .about-content {
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-        }
+  }
 }
 
 .about-section-image__picture {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 46px;
-    margin-bottom: 56px;
-    margin-right: 17px;
-   
-    @media screen and (min-width: 768px) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
+  margin-bottom: 56px;
+  margin-right: 17px;
+
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 17px;
     margin-left: 0;
-    }
-    @media screen and (min-width: 1280px) {
+  }
+  @media screen and (min-width: 1280px) {
     margin-right: 74px;
     margin-bottom: 0;
-    }
-
+  }
 }
 
 .section-content {
-    padding-top: 46px;
-    padding-left: 30px;
-    padding-right: 30px;
- 
-    @media screen and (min-width: 768px) {
+  padding-top: 46px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (min-width: 768px) {
     padding-top: 50px;
     padding-left: 0;
-    max-width: 340px;  
+    max-width: 340px;
     padding-right: 0;
-    }
-    @media screen and (min-width: 1280px) {
+  }
+  @media screen and (min-width: 1280px) {
     margin-left: 0;
     margin-right: 0;
-    max-width: 463px;  
-    }
+    max-width: 463px;
+  }
 
-    &__pre-text {
+  &__pre-text {
     font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
     color: $secondTextColor;
     margin-bottom: 32px;
-    
+
     @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.76;  
+      font-size: 14px;
+      line-height: 1.76;
     }
     @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.75; 
-    margin-bottom: 35px; 
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 35px;
     }
-    }
+  }
 
-    &__text {
+  &__text {
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.04em;
@@ -149,64 +150,64 @@
     color: $thirdTextColor;
     margin-bottom: 17px;
     @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.76; 
+      font-size: 14px;
+      line-height: 1.76;
     }
     @media screen and (min-width: 1280px) {
-    line-height: 1.94; 
-    margin-bottom: 35px;
+      line-height: 1.94;
+      margin-bottom: 35px;
     }
-    }
+  }
 
-    &__after-text {
+  &__after-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
     color: $thirdTextColor;
     margin-bottom: 27px;
     @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.76;
-    margin-bottom: 62px;
+      font-size: 14px;
+      line-height: 1.76;
+      margin-bottom: 62px;
     }
     @media screen and (min-width: 1280px) {
-    line-height: 1.94;
-    margin-bottom: 45px;
+      line-height: 1.94;
+      margin-bottom: 45px;
     }
-    }
+  }
 
-    &__button {
+  &__button {
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
     height: 44px;
     padding-left: 37px;
     padding-right: 37px;
-    }
+  }
 }
 
 .btn__arrow-red {
-    margin-left: 14px;
-    fill: $accentColor;
+  margin-left: 14px;
+  fill: $accentColor;
 }
 
 .btn--white {
-    display: inline-block;
-    text-align: center;
-    padding: 10px 20px;
-    color: $accentColor;
-    background-color: $mainBtnColor;
-    stroke: #d41342;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    border: 0 solid transparent;
-    border-radius: 22px;
-    cursor: pointer;
-    vertical-align: middle;
-    outline: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      background-color: $firstBtnHoverColor;
-    }
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  color: $accentColor;
+  background-color: $mainBtnColor;
+  stroke: #d41342;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: 0 solid transparent;
+  border-radius: 22px;
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $firstBtnHoverColor;
   }
+}

@@ -1,5 +1,6 @@
 .products {
   padding-top: 127px;
+  padding-bottom: 119px;
   &__pretitle {
     @include font(400, 18px, 1.16, 0em, $fourthTextColor);
     font-family: Titan One;

@@ -169,6 +169,10 @@
   font-size: 14px;
   line-height: 183%;
   color: #907e82;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 .link {
   text-decoration: none;
